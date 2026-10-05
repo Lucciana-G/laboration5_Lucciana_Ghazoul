@@ -72,7 +72,7 @@ function displayErrors() {
     errors.forEach(function (error) {
         const li = document.createElement("li");
         li.textContent = error;
-        errorList.appendChild(li);
+        errorList.appendChild(li); 
     });
 }
 
