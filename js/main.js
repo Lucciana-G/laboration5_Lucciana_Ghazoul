@@ -21,6 +21,8 @@ const errorList = document.querySelector("#errorlist");
 const historySection = document.querySelector("#history");
 const deleteHistoryButton = document.querySelector("#delete");
 
+// Nyckeln som historiken sparas under i localStorage
+const STORAGE_KEY = "studentcards";
 
 // Array som används för felmeddelanden
 let errors = [];
