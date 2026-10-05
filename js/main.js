@@ -33,6 +33,7 @@ let history = [];
  * @returns {boolean}
  */
 function validateForm() {
+
     errors =[];
 
     const fullname = fullnameInput.value.trim();
@@ -53,8 +54,10 @@ function validateForm() {
     }
 
     // Visa eventuella felmeddelanden
+    displayErrors();
 
     // Returnera resultatet (true eller false) av valideringen
+    return errors.length === 0;
 }
 
 
