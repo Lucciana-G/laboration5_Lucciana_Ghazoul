@@ -80,6 +80,12 @@ function displayErrors() {
  */
 function createStudentCard() {
     // Hämta information från formuläret
+    const card ={
+        fullname: fullnameInput.value.trim(),
+        email: emailInput.value.trim(),
+        phone: phoneInput.value.trim(),
+        font: fontSelect.value
+    };
 
     // Uppdatera studentkortet
 
