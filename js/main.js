@@ -66,8 +66,14 @@ function validateForm() {
  */
 function displayErrors() {
     // Rensa tidigare felmeddelanden
+    errorList.innerHTML = "";
 
     // Skriv ut aktuella felmeddelanden till DOM
+    errors.forEach(function (error) {
+        const li = document.createElement("li");
+        li.textContent = error;
+        errorList.appendChild(li);
+    });
 }
 
 
