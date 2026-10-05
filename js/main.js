@@ -120,6 +120,7 @@ function deleteHistory() {
 // - skapa studentkort om valideringen lyckas
 form.addEventListener("submit", function (event) {
     event.preventDefault();
+
     if (validateForm()) {
         createStudentCard();
     }
@@ -134,3 +135,7 @@ deleteHistoryButton.addEventListener("click", deleteHistory);
 
 // När sidan laddas:
 // - läs in och visa eventuell tidigare historik
+window.addEventListener("load", function() {
+    loadHistory();
+    renderHistory();
+});
