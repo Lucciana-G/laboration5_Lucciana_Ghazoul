@@ -127,7 +127,7 @@ form.addEventListener("submit", function (event) {
 
 
 // När användaren klickar på "Rensa"
-
+clearButton.addEventListener("click",clearForm);
 
 // När användaren klickar på "Radera historik"
 
