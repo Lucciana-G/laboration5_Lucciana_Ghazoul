@@ -99,6 +99,8 @@ function createStudentCard() {
     history.unshift(card);
 
     // Spara och uppdatera historiken
+    saveHistory();
+    renderHistory();
 }
 
 
