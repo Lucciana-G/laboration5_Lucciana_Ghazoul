@@ -96,6 +96,7 @@ function createStudentCard() {
     previewPhone.style.fontFamily = card.font;
 
     // Lägg till studentkortet i historiken
+    history.unshift(card);
 
     // Spara och uppdatera historiken
 }
