@@ -46,8 +46,6 @@ function validateForm() {
     }
     if (email === "") {
         errors.push("E-post är obligatoriskt.");
-    } else if (!isValidEmail(email)) {
-        errors.push("Ange en giltig e-postadress.");
     }
     if (phone === "") {
         errors.push("Telefon är obligatoriskt.");
