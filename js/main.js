@@ -90,9 +90,9 @@ function createStudentCard() {
     };
 
     // Uppdatera studentkortet
-    previewFullname.textContent = card.fullname;
-    previewEmail.textContent = card.email;
-    previewPhone.textContent = card.phone;
+    previewFullname.textContent ="Namn: " + card.fullname;
+    previewEmail.textContent = "E-post: " + card.email;
+    previewPhone.textContent = "Telefon: " + card.phone;
     previewFullname.style.fontFamily = card.font;
     previewEmail.style.fontFamily = card.font;
     previewPhone.style.fontFamily = card.font;
@@ -143,13 +143,13 @@ function renderHistory() {
         article.style.fontFamily = card.font;
 
         const name = document.createElement("p");
-        name.textContent = card.fullname;
+        name.textContent = "Namn: " + card.fullname;
 
         const email = document.createElement("p");
-        email.textContent = card.email;
+        email.textContent = "E-post: " + card.email;
 
         const phone = document.createElement("p");
-        phone.textContent = card.phone;
+        phone.textContent = "Telefon: " + card.phone;
 
         article.appendChild(name);
         article.appendChild(email);
