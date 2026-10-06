@@ -188,6 +188,8 @@ function deleteHistory() {
     localStorage.removeItem(STORAGE_KEY);
 
     // Uppdatera history och visningen på sidan
+    history = [];
+    renderHistory();
 }
 
 
