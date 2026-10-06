@@ -123,6 +123,13 @@ function loadHistory() {
     const savedHistory = localStorage.getItem(STORAGE_KEY);
 
     // Uppdatera history
+    if (savedHistory) {
+
+        history = JSON.parse(savedHistory);
+    } else{
+        history = [];
+    }
+
 }
 
 
