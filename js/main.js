@@ -141,6 +141,25 @@ function renderHistory() {
     historySection.innerHTML = "";
 
     // Skriv ut innehållet i history till DOM
+    history.forEach(function (card) {
+        const article = document.createElement("article");
+        article.style.fontFamily = card.font;
+
+        const name = document.createElement("p");
+        name.textContent = card.fullname;
+
+        const email = document.createElement("p");
+        email.textContent = card.email;
+
+        const phone = document.createElement("p");
+        phone.textContent = card.phone;
+
+        article.appendChild(name);
+        article.appendChild(email);
+        article.appendChild(phone);
+
+        historySection.appendChild(article);
+    });
 }
 
 
@@ -149,7 +168,7 @@ function renderHistory() {
  */
 function clearForm() {
     // Återställ formulär och studentkort
-
+    
     // Rensa eventuella felmeddelanden
 }
 
