@@ -175,6 +175,8 @@ function clearForm() {
     previewPhone.style.fontFamily = "";
 
     // Rensa eventuella felmeddelanden
+    errors = [];
+    displayErrors();
 }
 
 
