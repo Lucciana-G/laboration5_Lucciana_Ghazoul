@@ -37,7 +37,7 @@ let history = [];
 function validateForm() {
 
     errors =[];
-
+    // Läs in värdena från formuläret och trimma bort eventuella mellanslag.
     const fullname = fullnameInput.value.trim();
     const email = emailInput.value.trim();
     const phone = phoneInput.value.trim();
