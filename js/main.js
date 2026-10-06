@@ -120,6 +120,7 @@ function saveHistory() {
  */
 function loadHistory() {
     // Hämta eventuell sparad historik
+    const savedHistory = localStorage.getItem(STORAGE_KEY);
 
     // Uppdatera history
 }
